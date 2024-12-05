@@ -18,4 +18,5 @@ jobs:
         run: sudo apt-get install yamllint
 
       - name: Ejecutar yamllint
-        run: yamllint **/*.yml
+        run: |
+          find . -name "*.yml" -o -name "*.yaml" | xargs yamllint
