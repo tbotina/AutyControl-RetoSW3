@@ -1,0 +1,22 @@
+# Configuración básica para una aplicación en Python
+app:
+  name: "MiAplicacion"
+  version: "1.0.0"
+  debug: true
+  secret_key: "supersecreto123"
+
+database:
+  host: "localhost"
+  port: 5432
+  user: "admin"
+  password: "password123"
+  name: "mi_base_de_datos"
+
+logging:
+  level: "INFO"
+  file: "app.log"
+
+api:
+  url: "https://api.ejemplo.com/v1/"
+  timeout: 30
+  retries: 3
